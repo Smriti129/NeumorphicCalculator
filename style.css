@@ -1,0 +1,168 @@
+body{
+    background-color: rgb(233, 231, 231);
+    margin:0;
+}
+
+.container {
+    width: 250px;
+    height: 430px;
+    border-radius: 10px;
+    margin: 80px auto;
+    background-color: rgb(230, 227, 227);
+    box-shadow: 5px 5px 10px #b6a9a9, -5px -5px 10px #ffffff;
+}
+
+.cal-box {
+    width: 200px;
+    margin: 20px auto;
+    height: 400px;
+    padding-top: 15px;
+}
+
+#history {
+    text-align: right;
+    height: 20px;
+    margin: 0 20px;
+    padding-top: 20px;
+    font-size: 15px;
+}
+
+#output {
+    text-align: right;
+    height: 16px;
+    margin: 10px 20px;
+    font-size: 30px;
+}
+
+#result {
+    height: 100px;
+    border: none;
+    outline: none;
+    text-align: right;
+    font-weight: 600;
+    font-size: 20px;
+    width: 200px;
+    padding-bottom: 10px ;
+    border-radius: 10px;
+    background-color: transparent;
+    box-shadow: inset 2px 2px 5px #babecc, -5px -5px 10px #ffffff ;
+}
+
+#keyboard {
+    height: 400px;
+}
+
+.operator, .number, .empty {
+    width: 40px;
+    height: 42px;
+    margin: 15px 5px 0px 5px;
+    font-size: 18px;
+    border-radius: 8px;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    background: rgb(230, 227, 227);
+    box-shadow: 5px 5px 10px #b6acac, -5px -5px 10px #fafaf4;
+    float: left;
+}
+.operator, .number {
+    cursor: pointer;
+}
+
+.empty {
+    box-shadow: none;
+    background: none;
+}
+
+.operator:active, .number:active {
+    box-shadow: inset 1px 1px 2px #babecc, inset -1px -1px 2px #ffffff;
+}
+
+#clear, #backspace {
+    background: red;
+    color: white;
+}
+
+.operator {
+    background: black;
+    color: white;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        width: 550px;
+        height: 780px;
+    }
+
+    .cal-box{
+        width: 500px;
+        height: 700px;
+    }
+
+    #result {
+        height: 200px;
+        width: 500px;
+        font-size: 25px;
+    }
+
+    #history {
+        height: 60px;
+        font-size: 30px;
+    }
+
+    #output {
+        height: 70px;
+        font-size: 55px;
+    }
+    
+    #keyboard {
+        height: 500px;
+    }
+
+    .operator, .number, .empty {
+        height: 80px;
+        width: 80px;
+        margin: 26px 25px 0px 20px;
+        float: left;
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 540px) {
+    .container {
+        width: 250px;
+        height: 430px;
+    }
+
+    .cal-box{
+        width: 200px;
+        height: 400px;
+    }
+
+    #result {
+        height: 100px;
+        width: 200px;
+        font-size: 25px;
+    }
+
+    #history {
+        height: 20px;
+        font-size: 15px;
+    }
+
+    #output {
+        height: 16px;
+        font-size: 30px;
+    }
+    
+    #keyboard {
+        height: 400px;
+    }
+
+    .operator, .number, .empty {
+        height: 38px;
+        width: 38px;
+        margin: 20px 7px 0px 5px;
+        font-size: 18px;
+    }
+}
